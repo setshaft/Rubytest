@@ -1,3 +1,57 @@
 Answers : 
 
+1) i) a is a number or string
+   ii)a is a variable
 
+2) i,j = j,i
+
+3) puts "No tweets for you !" unless tweets.empty? 
+      
+   else
+  	tweets = Timeline.new("Horrah ! finally I am on tweeter .") 
+	puts tweets
+   end
+
+4)  class Student
+	attr_accessor :name, :age, :place
+		@@no_of_students = 0
+	def initialize
+		@@no_of_students+=1
+	end
+
+	def self.print_number_of_instances
+		puts @@no_of_students
+	end
+end
+
+	first_student = Student.new
+	first_student.name = "siddhardha"
+	first_student.age = 20
+	first_student.place = "vijayawada"
+
+	second_student =Student.new
+Student.print_number_of_instances
+
+5) self is used for giving access to the current object 
+
+class Code
+  attr_writer :title
+
+  def self.codeauthor
+    "Siddhardha Tagirisa"
+  end
+
+  def full_title
+    "#{@title} by #{Code.codeauthor}"
+  end
+end
+
+pst = Code.new
+pst.title = "Code written by"
+puts pst.full_title
+
+6) def test
+  yield
+  puts "hi you tested your method perfectly"
+end
+test{ puts "Hello world"}
