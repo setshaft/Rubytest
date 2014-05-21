@@ -52,6 +52,6 @@ puts pst.full_title
 
 6) def test
   yield
-  puts "hi you tested your method perfectly"
+  puts "Hi you tested your method perfectly"
 end
 test{ puts "Hello world"}
